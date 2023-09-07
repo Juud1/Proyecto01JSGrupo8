@@ -1,11 +1,28 @@
-
-
-document.getElementById("Porcentaje").onclick = function(){
+document.getElementById("Calcular").onclick = function(){
     var resultadoE = document.getElementById("resultados_valor");
-    NumeroA = Number(document.getElementById("NumeroA").value);
-    NumeroB = Number(document.getElementById("NumeroB").value);
-    let resultado = (NumeroA*NumeroB/100);
-    console.log("El resultado del porcentaje es " +resultado);
-    resultadoE.innerHTML= resultado;
+    var montoTotalE = document.getElementById("montoTotal");
+    var porcentajeSeleccionado = Number(document.getElementById("Porcentaje").value);
+    var NumeroA = Number(document.getElementById("NumeroA").value);
 
-}
+    var propina = (NumeroA * porcentajeSeleccionado / 100);
+    var total = NumeroA + propina;
+
+    resultadoE.innerHTML = "Propina a pagar: $" + propina.toFixed(2);
+    montoTotalE.innerHTML = "Monto total a pagar (incluyendo propina): $" + total.toFixed(2);
+
+    document.getElementById("VolverCalcular").style.display = "block";
+};
+
+document.getElementById("Porcentaje").oninput = function() {
+    var porcentajeSeleccionado = document.getElementById("Porcentaje").value;
+    document.getElementById("porcentajeSeleccionado").innerHTML = porcentajeSeleccionado + "%";
+};
+
+document.getElementById("VolverCalcular").onclick = function() {
+    document.getElementById("NumeroA").value = "";
+    document.getElementById("Porcentaje").value = "15";
+    document.getElementById("porcentajeSeleccionado").innerHTML = "15%";
+    document.getElementById("resultados_valor").innerHTML = "";
+    document.getElementById("montoTotal").innerHTML = "";
+    this.style.display = "none";
+};
