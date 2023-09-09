@@ -1,0 +1,68 @@
+.titulo{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+.calculadora{
+   display: flex;
+   flex-direction: column;
+   width: 300px; 
+   padding: 15px;
+   border: 1px solid skyblue;
+   border-radius: 5px;
+}
+
+.button{
+ height: 35px;
+ margin: 5px 0px;
+ background-color: skyblue;
+ border: none;
+ border-radius: 5px;
+ color: #333;
+ 
+}
+
+.button:hover{
+background-color: #333;
+color: skyblue;
+}
+
+.grupo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.resultados{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.reload{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.totalPagar{
+    position: relative;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}

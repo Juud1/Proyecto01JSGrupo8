@@ -7,34 +7,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <div class="titulo"><h1>Calculadora de Propinas</h1></div>
+
     <div class="container">
-        <h1>Calculadora de Propinas</h1>
-
-
         <div class="calculadora">
             <form action="">
-                <label for="NumeroA">Ingrese la cuenta</label>
+                <label for="NumeroA">Cuenta</label>
                 <input type="number" name="Numeroa" id="NumeroA">
-                <label for="NumeroB">Ingrese el porcentaje</label>
+                <label for="NumeroB">Porcentaje</label>
                 <input type="number" name="Numerob" id="NumeroB">
-                <button id="Porcentaje" type="button">Calcular el porcentaje</button>
+                <button class="button" id="Porcentaje" type="button">Calcular</button>
             </form>
         </div>
-        
-
+    
     </div>
+    <h3><p class="totalPagar">Total a pagar</p></h3>
     <div class="resultados">
-        <div>
-            <p class="resultados_tip.Propina">Propina a pagar</p>
-        </div>
+      
         <p id="resultados_valor"></p>
+       
     </div>
 
-    <button>Volver a calcular</button>
-
+    <div class="reload">
+        <button class="button">Volver a calcular</button>
+    </div>
     <div class="grupo">
+        
         Proyecto Grupo 8
-        Repositorio en GitHub <a href="" target="_blank">Trabajo 2</a>
+        Repositorio en GitHub <a href="https://github.com/Juud1/TP02FPW.git" target="_blank">Trabajo 2</a>
     </div>
 
     <script src="../src/index.js"></script>
