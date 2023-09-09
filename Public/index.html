@@ -10,27 +10,24 @@
     <div class="container">
         <h1>Calculadora de Propinas</h1>
 
-
         <div class="calculadora">
             <form action="">
                 <label for="NumeroA">Ingrese la cuenta</label>
                 <input type="number" name="Numeroa" id="NumeroA">
-                <label for="NumeroB">Ingrese el porcentaje</label>
-                <input type="number" name="Numerob" id="NumeroB">
-                <button id="Porcentaje" type="button">Calcular el porcentaje</button>
+                <label for="Porcentaje">Seleccione el porcentaje de propina:</label>
+                <input type="range" min="10" max="25" step="5" value="15" id="Porcentaje">
+                <p id="porcentajeSeleccionado">15%</p>
+                <button id="Calcular" type="button">Calcular la propina</button>
             </form>
         </div>
-        
-
     </div>
+
     <div class="resultados">
-        <div>
-            <p class="resultados_tip.Propina">Propina a pagar</p>
-        </div>
         <p id="resultados_valor"></p>
+        <p id="montoTotal"></p>
     </div>
 
-    <button>Volver a calcular</button>
+    <button id="VolverCalcular" style="display: none;">Volver a calcular</button>
 
     <div class="grupo">
         Proyecto Grupo 8
