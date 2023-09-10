@@ -1,9 +1,12 @@
+
 .titulo{
    
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
+    height: 20vh;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .container
 {
@@ -11,26 +14,64 @@
     align-items: center;
     justify-content: center;
     height: 10vh;
+    margin-top: 50px;
+    
 }
 .calculadora{
    position: relative;
-   top: 50px;
+   top: 75px;
    display: flex;
    flex-direction: column;
-   width: 200px;
+   width: 60%;
+   height:300px;
    padding: 15px;
    border: 1px solid skyblue;
    border-radius: 5px;
 }
 
+.interior_calculadora{
+    display:flex;
+    flex-direction: column;
+    margin:30px 30px;
+}
+.titulo_calculadora{
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.input{
+    margin-top: 10px;
+    height:30px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.slide{
+    margin-top: 30px;
+    
+}
+#porcentajeSeleccionado{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+label{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
 .button{
- height: 35px;
- margin: 5px 0px;
+ height: 60px;
  background-color: skyblue;
+ font-size: 20px;
  border: none;
  border-radius: 5px;
  color: #333;
- 
+ justify-content: center;
+ margin-left: 35%;
+ width: 250px;
+ font-family: 'Ubuntu', sans-serif;
 }
 
 .button:hover{
@@ -38,24 +79,47 @@ background-color: #333;
 color: skyblue;
 }
 
+.button_dos{
+    height: 60px;
+    background-color: skyblue;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    justify-content: center;
+    margin-left:200px;
+    width: 400px;
+    font-family: 'Ubuntu', sans-serif;
+   }
+
+.button_dos:hover{
+background-color: #333;
+color: skyblue;
+}
+
 .grupo{
     position: relative;
-    top:200px;
+    top:250px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 10vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30PX;
 }
 
 .resultados{
 
    position: relative;
-   top: 50px;
+   top: 210px;
    display: flex;
    flex-direction: column;
    width: 200px;
    padding: 15px;
    border-radius: 5px;
+   margin-right: 625px;
+   font-size: 25px;
+   font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -66,4 +130,6 @@ color: skyblue;
     align-items: center;
     justify-content: center;
     height: 40vh;
+    
 }
+

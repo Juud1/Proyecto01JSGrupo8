@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Propinas</title>
+    <!--GOOGLE FONTS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed&family=Fjalla+One&family=Kanit:wght@300&family=Montserrat:wght@300&family=Oswald:wght@500&family=Phudu:wght@300&family=Raleway&family=Rampart+One&family=Roboto+Condensed:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,20 +19,22 @@
 
         <div class="calculadora">
             <form action="">
-                <label for="NumeroA">Ingrese la cuenta</label>
-                <input type="number" name="Numeroa" id="NumeroA">
-                <label for="Porcentaje">Seleccione el porcentaje de propina:</label>
-                <input type="range" min="10" max="25" step="5" value="15" id="Porcentaje">
-                <p id="porcentajeSeleccionado">15%</p>
-                <button class="button" id="Calcular" type="button">Calcular la propina</button>
+                <div class="interior_calculadora">
+                    <label class="titulo_calculadora" for="NumeroA">Ingrese la cuenta</label>
+                    <input class="input" type="number" name="Numeroa" id="NumeroA">
+                    <input class="slide" type="range" min="10" max="25" step="5" value="15" id="Porcentaje" placeholder="prueba">
+                    <div id="porcentajeSeleccionado">15%</div>
+                </div>
+            
+                <button class="button" id="calcular" type="button">Calcular la propina</button>
             </form>
         </div>
     </div>
 <div class="container1">
     <div class="resultados">
         <p id="resultados_valor"></p>
-        <p id="montoTotal"></p>
-        <button class="button" id="VolverCalcular" style="display: none;">Volver a calcular</button>
+        <p id="monto_total"></p>
+        <button class="button_dos" id="VolverCalcular" style="display: none;">Volver a calcular</button>
     </div>
     
 </div>
