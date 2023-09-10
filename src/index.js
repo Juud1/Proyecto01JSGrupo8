@@ -1,6 +1,6 @@
-document.getElementById("Calcular").onclick = function(){
+document.getElementById("calcular").onclick = function(){
     var resultadoE = document.getElementById("resultados_valor");
-    var montoTotalE = document.getElementById("montoTotal");
+    var montoTotalE = document.getElementById("monto_total");
     var porcentajeSeleccionado = Number(document.getElementById("Porcentaje").value);
     var NumeroA = Number(document.getElementById("NumeroA").value);
 
@@ -23,6 +23,6 @@ document.getElementById("VolverCalcular").onclick = function() {
     document.getElementById("Porcentaje").value = "15";
     document.getElementById("porcentajeSeleccionado").innerHTML = "15%";
     document.getElementById("resultados_valor").innerHTML = "";
-    document.getElementById("montoTotal").innerHTML = "";
+    document.getElementById("monto_total").innerHTML = "";
     this.style.display = "none";
 };
