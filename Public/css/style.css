@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap');
+@import url('css2?family=Josefin+Sans:wght@200;400;700&display=swap');
 
 body{
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url(https://img.freepik.com/foto-gratis/copa-vino_1203-3445.jpg?w=1380&t=st=1694383632~exp=1694384232~hmac=8d7544c5b803e0c1527a6cf2a25abab1761ae59924e6aa393f2e50b589ccf195);
+    background-image: url(../img/restaurant.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -32,7 +32,7 @@ body{
 }
 
 .calculadora{
-   background-color: rgba(155, 129, 101, 0.8);
+   background-color: hsla(35, 59%, 19%, 0.899);
    position: relative;
    top: 75px;
    display: flex;
@@ -40,8 +40,8 @@ body{
    width: 60%;
    height:300px;
    padding: 15px;
-   border: 1px solid rgb(82, 19, 19);
-   border-radius: 5px;
+   border: 1px solid #4B3414;
+   border-radius: 9px;
 }
 
 .interior_calculadora{
@@ -127,6 +127,7 @@ label{
     justify-content: center;
     display: flex;
     align-items: center;
+    margin-top: 160px;
     height: 40vh;
 }
 
@@ -140,7 +141,7 @@ label{
 }
 
 .resultados p{
-    background-color: rgba(82, 19, 19, 0.5);
+    background-color: #4B3414;
     width: 650px;
     justify-content: center;
     margin-top: 10px;
@@ -155,7 +156,7 @@ label{
 
 .grupo a{
     text-decoration: none;
-    color: aliceblue;
+    color: #4B3414;
     border: 1px solid rgb(128, 52, 52);
     padding: 3px;
     margin: 0 3px;
