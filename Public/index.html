@@ -14,39 +14,38 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="titulo"><h1>CALCULAR PROPINA</h1></div>
+    <div class="titulo"><h1>Calculadora de Propinas</h1></div>
     <div class="container">
 
         <div class="calculadora">
+            <form action="">
                 <div class="interior_calculadora">
-                    <label class="titulo_calculadora" for="NumeroA">Ingrese el monto de la cuenta</label>
+                    <label class="titulo_calculadora" for="NumeroA">Ingrese la cuenta</label>
                     <input class="input" type="number" name="Numeroa" id="NumeroA">
                     <input class="slide" type="range" min="10" max="25" step="5" value="15" id="Porcentaje" placeholder="prueba">
                     <div id="porcentajeSeleccionado">15%</div>
-                </div>  
-                <div class="lugarBoton1">
-                    <button class="button" id="calcular" type="button">CALCULAR</button>
-                </div>         
+                </div>
+            
+                <button class="button" id="calcular" type="button">Calcular la propina</button>
+            </form>
         </div>
     </div>
-
-    <div class="espacio"></div>
-
-    <div class="container1">
-        <div class="resultados">
-            <p id="resultados_valor"></p>
-            <p id="monto_total"></p>
-            <div class="lugarBoton2">
-                <button class="button_dos" id="VolverCalcular" style="display: none;">⟲</button>
-            </div>
-        </div>     
+<div class="container1">
+    <div class="resultados">
+        <p id="resultados_valor"></p>
+        <p id="monto_total"></p>
+        <button class="button_dos" id="VolverCalcular" style="display: none;">Volver a calcular</button>
     </div>
+    
+</div>
+
+    
 
     <div class="grupo">
-        <div class="repositorio">Repositorio del proyecto en GitHub (GRUPO 8):<a href="https://github.com/Juud1/TP02FPW.git" target="_blank">TP02</a></div>
+        Proyecto Grupo 8
+        Repositorio en GitHub <a href="https://github.com/Juud1/Proyecto02JSGrupo8.git" target="_blank">Trabajo 2</a>
     </div>
 
     <script src="../src/index.js"></script>
-
 </body>
 </html>
