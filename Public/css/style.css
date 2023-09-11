@@ -105,7 +105,7 @@ color: skyblue;
     justify-content: center;
     height: 10vh;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 30PX;
+    font-size: 20PX;
 }
 
 .resultados{
@@ -117,7 +117,8 @@ color: skyblue;
    width: 200px;
    padding: 15px;
    border-radius: 5px;
-   margin-right: 625px;
+   margin: 0 auto;
+
    font-size: 25px;
    font-family: 'Ubuntu', sans-serif;
 }
