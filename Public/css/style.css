@@ -1,17 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap');
 
-
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap');
-
+body{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(https://img.freepik.com/foto-gratis/copa-vino_1203-3445.jpg?w=1380&t=st=1694383632~exp=1694384232~hmac=8d7544c5b803e0c1527a6cf2a25abab1761ae59924e6aa393f2e50b589ccf195);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    color:aliceblue;
+    justify-content: center;
+}
 
 .titulo{
-   
+    background-color: rgba(82, 19, 19, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 20vh;
-    font-size: 28px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
 }
+
 .container
 {
     display: flex;
@@ -21,7 +30,9 @@
     margin-top: 50px;
     
 }
+
 .calculadora{
+   background-color: rgba(155, 129, 101, 0.8);
    position: relative;
    top: 75px;
    display: flex;
@@ -29,7 +40,7 @@
    width: 60%;
    height:300px;
    padding: 15px;
-   border: 1px solid skyblue;
+   border: 1px solid rgb(82, 19, 19);
    border-radius: 5px;
 }
 
@@ -38,103 +49,130 @@
     flex-direction: column;
     margin:30px 30px;
 }
+
 .titulo_calculadora{
     font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .input{
     margin-top: 10px;
     height:30px;
     font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
 }
+
 .slide{
     margin-top: 30px;
-    
 }
+
 #porcentajeSeleccionado{
     text-align: center;
     font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
 }
+
 label{
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
 }
 
-
-
 .button{
- height: 60px;
- background-color: skyblue;
- font-size: 24px;
- border: none;
- border-radius: 5px;
- color: #333;
- justify-content: center;
- margin-left: 38%;
- width: 250px;
- font-family: 'Josefin Sans', sans-serif;
+    height: 55px;
+    width: 200px;
+    background-color: rgb(255, 233, 209);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(128, 52, 52);
+}
+
+.lugarBoton1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button:hover{
-background-color: #333;
-color: skyblue;
+    background-color: rgb(255, 233, 209);
+    color: rgb(128, 52, 52);
+    transform: scale(1.1, 1.1);
 }
 
 .button_dos{
     height: 60px;
-    background-color: skyblue;
-    font-size: 22px;
+    width: 100px;
+    justify-content: center;
+    background-color: rgb(255, 233, 209);
+    font-size: 30px;
     border: none;
     border-radius: 5px;
-    color: #333;
-    justify-content: center;
-    margin-left: auto;
-    width: 250px;
-    font-family: 'Josefin Sans', sans-serif;
-   }
-
-.button_dos:hover{
-background-color: #333;
-color: skyblue;
+    color: rgb(128, 52, 52);
 }
 
-.grupo{
-    position: relative;
-    top:250px;
+.lugarBoton2{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20PX;
 }
 
-.resultados{
-
-   position: relative;
-   top: 210px;
-   display: flex;
-   flex-direction: column;
-   width: 200px;
-   padding: 15px;
-   border-radius: 5px;
-   margin: 0 auto;
-
-   font-size: 25px;
-   font-family: 'Ubuntu', sans-serif;
+.button_dos:hover{
+   background-color: rgb(255, 233, 209);
+   color: rgb(128, 52, 52);
+   transform: scale(1.1, 1.1);
 }
 
-
+.espacio{
+    height: 120px;
+}
 
 .container1
 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 40vh;
+}
+
+.resultados{
+   display: grid;
+   grid-template-columns: repeat(1, 2fr);
+   justify-content: center;
+   width: 200px;
+   padding: 15px;
+   font-size: 25px;
+}
+
+.resultados p{
+    background-color: rgba(82, 19, 19, 0.5);
+    width: 650px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.grupo{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40vh;
-    
+    font-size: 15px;
+}
+
+.grupo a{
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid rgb(128, 52, 52);
+    padding: 3px;
+    margin: 0 3px;
+}
+
+.pg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.repositorio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 10px;
 }
 
