@@ -1,11 +1,11 @@
 document.getElementById("calcular").onclick = function(){
-    var resultadoE = document.getElementById("resultados_valor");
-    var montoTotalE = document.getElementById("monto_total");
-    var porcentajeSeleccionado = Number(document.getElementById("Porcentaje").value);
-    var NumeroA = Number(document.getElementById("NumeroA").value);
+    let resultadoE = document.getElementById("resultados_valor");
+    let montoTotalE = document.getElementById("monto_total");
+    let porcentajeSeleccionado = Number(document.getElementById("Porcentaje").value);
+    let NumeroA = Number(document.getElementById("NumeroA").value);
 
-    var propina = (NumeroA * porcentajeSeleccionado / 100);
-    var total = NumeroA + propina;
+    let propina = (NumeroA * porcentajeSeleccionado / 100);
+    let total = NumeroA + propina;
 
     resultadoE.innerHTML = "Propina a pagar: $" + propina.toFixed(2);
     montoTotalE.innerHTML = "Monto total a pagar (incluyendo propina): $" + total.toFixed(2);
@@ -14,7 +14,7 @@ document.getElementById("calcular").onclick = function(){
 };
 
 document.getElementById("Porcentaje").oninput = function() {
-    var porcentajeSeleccionado = document.getElementById("Porcentaje").value;
+    let porcentajeSeleccionado = document.getElementById("Porcentaje").value;
     document.getElementById("porcentajeSeleccionado").innerHTML = porcentajeSeleccionado + "%";
 };
 
